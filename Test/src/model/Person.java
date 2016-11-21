@@ -3,16 +3,18 @@ package model;
 public class Person {
 	private String name;
 	private int age;
+	private String address;
 
 	public Person() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Person(String name, int age) {
+	public Person(String name, int age, String address) {
 		super();
 		this.name = name;
 		this.age = age;
+		this.address = address;
 	}
 
 	public String getName() {
@@ -30,10 +32,18 @@ public class Person {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
 
 	@Override
 	public String toString() {
-		return "MemberVO [name=" + name + ", age=" + age + "]";
+		return "MemberVO [name=" + name + ", age=" + age +", address=" + address + "]";
 	}
 
 }
