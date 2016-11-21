@@ -1,15 +1,15 @@
 package model;
 
-public class MemberVO {
+public class Person {
 	private String name;
 	private int age;
 
-	public MemberVO() {
+	public Person() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public MemberVO(String name, int age) {
+	public Person(String name, int age) {
 		super();
 		this.name = name;
 		this.age = age;
